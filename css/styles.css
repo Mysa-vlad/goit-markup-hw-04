@@ -44,6 +44,7 @@ img{
     margin: 0 auto;
     padding: 0 15px;
 }
+
 /* #endregion main */
 
 /* #region top line */
@@ -88,7 +89,7 @@ header .container{
 .first-li-menu a::after{
     content: '';
     width: 100%;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: -1px;
     height: 4px;
@@ -136,9 +137,12 @@ header .container{
     flex-direction: column;
      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)),
-     url(/images/people-office\ 1.jpg);
-
-     background-size: cover;
+     url(../images/people-office\ 1.jpg);
+    max-width: 1440px;
+    background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: 0 auto;
 }
 .main-title{
     color: #FFFFFF;
@@ -167,6 +171,7 @@ header .container{
   height: 56px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus{
@@ -189,6 +194,7 @@ header .container{
     display: flex;
     justify-content: center; 
     align-items: center;
+    margin-bottom: 8px;
 }
 .list-first-section{
     display: flex;
